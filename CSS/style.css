@@ -8,11 +8,25 @@ body {
   background: #f1f1f1;
 }
 
-h1{ text-align: center; }
-h2 { text-align: center; }
-h3 {text-align: center;}
-h4 {text-align: center;}
-h5{text-align: center;}
+h1{ text-align: center;
+    font-weight: 700; 
+}
+
+h2{ text-align: center;
+    font-weight: 615; 
+}
+
+h3 {text-align: center;
+    font-weight: 600;
+    }
+
+h4 {text-align: center;
+    font-weight: 500;
+    }
+
+h5{text-align: center;
+   font-weight: 400;
+   }
 /* Header/Blog Title */
 .header {
   padding: 30px;
@@ -77,9 +91,15 @@ h5{text-align: center;}
   padding-left: 20px;
 
 }
+
+img { width: 50%;
+	height: 600px;
+    background-position: center;
+    margin: 10px;
+}
 /* Fake image */
 .fakeimg {
-  background-color: #aaa;
+  background-color: lightblue;
   width: 100%;
   padding: 20px;
 }
@@ -89,8 +109,19 @@ h5{text-align: center;}
   background-color: white;
   padding: 20px;
   margin-top: 20px;
+
 }
 
+.Heathrowimg{   
+  height: 500px;
+  width: 100%;
+  padding: 20px;
+  background-image: url("../img/Heathrow.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+ }
 .image-card {
   height: 500px;
   width: 100%;
@@ -108,12 +139,14 @@ h5{text-align: center;}
 }
 .boxes {
   content: "";
-  width: 250px;
-  height: 250px;
+  width: 260px;
+  height: 260px;
   padding: 20px;
-  background-color: pink;
+  background-color: white;
   margin: 2%;
   display: inline-block;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
 
 }
 .boxes:before {
@@ -127,9 +160,16 @@ h5{text-align: center;}
   position: absolute;
   display: block;
 
-
 }
 
+button { 
+	background-color: mintcream;
+    border-color: red;
+    text-align: center;
+    text-decoration: none;
+    margin: 60px;
+
+      }
 
 /* Footer */
 .footer {
