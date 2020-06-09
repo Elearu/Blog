@@ -112,6 +112,24 @@ img { width: 50%;
 
 }
 
+.tb {height: 200px;
+  width: 100%;
+  padding: 20px;
+  background-image: url("../img/LB.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;}
+
+.money {
+  height: 200px;
+  width: 100%;
+  padding: 20px;
+  background-image: url("../img/money.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+}
 .Heathrowimg{   
   height: 500px;
   width: 100%;
@@ -163,7 +181,7 @@ img { width: 50%;
 }
 
 button { 
-	background-color: mintcream;
+	  background-color: mintcream;
     border-color: red;
     text-align: center;
     text-decoration: none;
