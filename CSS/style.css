@@ -194,11 +194,10 @@ img { width: 50%;
 
 }
 .popular-images { 
-  width: 50px
-  height: 50px;
+  width: 30%;
+  height: 30%;
   margin: none;
   padding: 10px;
-  overflow: auto; 
   clear: right;
 
 }
