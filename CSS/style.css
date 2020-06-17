@@ -190,10 +190,16 @@ h5{text-align: center;
 
 }
 .popular-images { 
-  clear: right;
+  display: inline;
+  float: left;
+  
+
+ 
 
 }
 .popular-textboxes { 
+  display: inline;
+  float: left;
   width: 100px;
   height: 50px;
 
