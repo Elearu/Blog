@@ -111,7 +111,15 @@ img { width: 50%;
   margin-top: 20px;
 
 }
-
+.image-card {
+  height: 500px;
+  width: 100%;
+  padding: 20px;
+  background-image: url("../img/uk.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .tb {height: 200px;
   width: 100%;
   padding: 20px;
@@ -140,15 +148,21 @@ img { width: 50%;
   background-position: center;
 
  }
-.image-card {
-  height: 500px;
+
+.Edinburgh {   
+  height: 400px;
   width: 100%;
   padding: 20px;
-  background-image: url("../img/uk.jpg"); 
+  background-image: url("../img/edinburgh.jpg"); 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
+
+ }
+
+
+
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -177,6 +191,21 @@ img { width: 50%;
   height: 200px;
   position: absolute;
   display: block;
+
+}
+.popular-images { 
+  width: 50px
+  height: 50px;
+  margin: none;
+  padding: 10px;
+  overflow: auto; 
+  clear: right;
+
+}
+.popular-textboxes { 
+  width: 100px;
+  height: 50px;
+
 
 }
 
