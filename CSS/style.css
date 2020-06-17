@@ -92,11 +92,7 @@ h5{text-align: center;
 
 }
 
-img { width: 50%;
-	height: 600px;
-    background-position: center;
-    margin: 10px;
-}
+
 /* Fake image */
 .fakeimg {
   background-color: lightblue;
@@ -194,10 +190,6 @@ img { width: 50%;
 
 }
 .popular-images { 
-  width: 25px;
-  height: 25px;
-  margin: none;
-  padding: 10px;
   clear: right;
 
 }
