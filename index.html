@@ -2,17 +2,18 @@
 <html>
 <head>
 	<title> Venezuelan in the UK </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="CSS/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,615;0,700;1,400;1,600&display=swap" rel="stylesheet">
   
 </head> 
 <body>
-
+	<div id="main"> <!--for mobile window to move #main needs to be added at the very top--> 
 		<div class="header">
 		  <h1>Venezuelan in the UK</h1>
 		</div><!--ends header--> 
 
-		<div class="topnav">
+		<div class="topnav"><!--for desktop navigation --> 
 		  <a href="index.html">Home</a>
 		  <a href="blog.html">Blog</a>
 		  <a href="info.html">Info</a>
@@ -21,6 +22,22 @@
 		  <a href="mvi.html"> Mi vida en Inglaterra</a>
 		  <a href="story.html" style="float:left;">My Story</a>
         </div><!--ends top nav--> 
+
+        <div id="mobile-menu"><!--for mobile navigation --> 
+			<div id="mySidebar" class="sidebar">
+					  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+					  <a href="#">About</a>
+					  <a href="#">Services</a>
+					  <a href="#">Clients</a>
+					  <a href="#">Contact</a>
+			</div>
+
+			
+				  <button class="openbtn" onclick="openNav()" style="width: 200px !important; height: 100px;">☰ Menu </button>  
+				  
+			
+        	
+        </div><!--mobile menu ends --> 
 
 		<div class="row"><!--starts row-->
 		  <div class="leftcolumn">
@@ -85,7 +102,18 @@
 		<div class="footer">
 
 		</div><!--ends footer --> 
+</div><!-- ends main --> 
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
 
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
 
 </body>
 </html>
