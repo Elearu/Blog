@@ -2,30 +2,49 @@
 <html>
 <head>
 	<title> Venezuelan in the UK </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="CSS/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,615;0,700;1,400;1,600&display=swap" rel="stylesheet">
 </head>
 <body>
-
+    <div id="main"> <!--for mobile window to move #main needs to be added at the very top--> 
 		<div class="header">
 		  <h1>Venezuelan in the UK</h1>
 		</div>
 
-		<div class="topnav">
+		<div class="topnav"><!--for desktop navigation --> 
 		  <a href="index.html">Home</a>
 		  <a href="blog.html">Blog</a>
 		  <a href="info.html">Info</a>
 		  <a href="curiosidades.html">Curiosidades</a>
 		  <a href="chc.html" style="float:right">Choques Culturales</a>
-		  <a href="mvi.html"> Mi vida en Inglaterra</a>
 		  <a href="story.html" style="float:left;">My Story</a>
-		</div>
+		</div><!--ends top nav--> 
+
+		<div id="mobile-menu"><!--for mobile navigation --> 
+			<div id="mySidebar" class="sidebar">
+					  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+					  <a href="index.html">Home</a>
+					  <a href="blog.html">Blog</a>
+					  <a href="info.html">Info</a>
+					  <a href="curiosidades.html">Curiosidades</a>
+					  <a href="chc.html">Choques Culturales</a>
+					  <a href="story.html">My Story</a>
+			</div>
+
+			
+				  <button class="openbtn" onclick="openNav()" style="width: 200px !important; height: 100px;">☰ Menu </button>  
+				  
+			
+        	
+        </div><!--mobile menu ends --> 
          
          <div class="row"><!--starts row-->
 		  <div class="columnl">
 		  	<div class="card">
 
 		  	  <h2>Reino Unido como pais soberano</h2>
+		  	  <div class="UK1image"></div>
               <p> Oficialmente reconocido como El Reino Unido de Gran Bretana e Irlanda del Norte, es un pais soberano constituido por el archipielago de Gran Bretana, a su vez formado porInglaterra, Escocia y Gales, e ,Irlanda del Norte.
               </p>
 
@@ -34,7 +53,43 @@
               <p>El idioma oficial es el Ingles y su moneda oficial es la libra esterlina (GBP o £).
               Una libra esterlina actualmente equivale a 309.743,43 Bs, 1.25 dolares o 1,10 euros. </p>
 
-		      <h2></h2>
+		      <p> Cada uno de los paises tiene su propia flor nacional y animal nacional siendo estos:</p>
+	    <table style="width:100%">      
+	     <tr>
+           <th>Pais</th>
+           <th>Flor Nacional</th> 
+           <th>Animal Nacional</th>
+         </tr>
+
+         <tr>
+           <td>Inglaterra</td>
+           <td>Rosa</td> 
+           <td>Leon</td>
+         </tr>
+
+          <tr>
+            <td>Escocia</td>
+            <td>Cardo</td>
+            <td>Unicornio</td>
+          </tr>
+
+           <tr>
+             <td>Gales</td>
+             <td>El ajoporro y el Narciso</td>
+             <td>Dragon rojo</td>
+           </tr>
+
+            <tr>
+              <td>Irlanda del Norte</td>
+              <td>El lino y el trebol</td>
+              <td>No tiene</td>
+             </tr>
+        </table> 
+
+		  </p>
+
+		      
+
 		     <div class="photo"></div>
 
 		      <p>
@@ -51,7 +106,6 @@
 		      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
 		    </div>
 		    <div class="card">
-		      <h3>Popular Post</h3>
 		      <div class="fakeimg"><p>Image</p></div>
 		      <div class="fakeimg"><p>Image</p></div>
 		      <div class="fakeimg"><p>Image</p></div>
@@ -65,6 +119,18 @@
 
 		<div class="footer">
 		  <h2></h2>
-		</div>
+		</div><!--ends footer --> 
+</div><!-- ends main --> 
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
 	</body>
 	</html>

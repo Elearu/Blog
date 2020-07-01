@@ -156,7 +156,15 @@ h5{text-align: center;
 
  }
 
+ .UK1image {height: 500px;
+  width: 100%;
+  padding: 20px;
+  background-image: url("../img/Uk1.jpg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
+ }
 
 
 /* Clear floats after the columns */
@@ -228,7 +236,10 @@ button {
   color: white;
  }
 
-
+table, th, td {
+  border: 1px solid lightgrey;
+  text-align: center;
+}
 /* Footer */
 .footer {
   padding: 20px;
@@ -247,7 +258,7 @@ button {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #DAD0A9;;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -260,10 +271,13 @@ button {
   color: #818181;
   display: block;
   transition: 0.3s;
+ 
 }
 
 .sidebar a:hover {
   color: #f1f1f1;
+  
+
 }
 
 .sidebar .closebtn {
@@ -272,6 +286,7 @@ button {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+  
 }
 
 .openbtn {
@@ -282,9 +297,11 @@ button {
   padding: 10px 15px;
   border: none;
 }
-
+.openbtn {
+  background-color: #DAD0A9;
+}
 .openbtn:hover {
-  background-color: #444;
+  background-color: #DAD0A9;
 }
 
 #main {
@@ -300,10 +317,12 @@ button {
   }
   .topnav{
     display: none;
+    background-color: #DAD0A9;
 
   }
   #mobile-menu {
     display: block;
+    background-color:#DAD0A9;
   }
 }
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -314,9 +333,10 @@ button {
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
-  .topnav a {
+  .topnav a { 
     float: none;
     width: 100%;
+
   }
 }
 

@@ -2,23 +2,42 @@
 <html>
 <head>
 	<title> Venezuelan in the UK </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="CSS/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,615;0,700;1,400;1,600&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="header">
-		  <h1>Venezuelan in the UK</h1>
-		</div>
+    <div id="main"> <!--for mobile window to move #main needs to be added at the very top--> 
+        <div class="header">
+	      <h1>Venezuelan in the UK</h1>
+	    </div>
 
-		<div class="topnav">
+		<div class="topnav"><!--for desktop navigation --> 
 		  <a href="index.html">Home</a>
 		  <a href="blog.html">Blog</a>
 		  <a href="info.html">Info</a>
 		  <a href="curiosidades.html">Curiosidades</a>
 		  <a href="chc.html" style="float:right">Choques Culturales</a>
-		  <a href="mvi.html"> Mi vida en Inglaterra</a>
 		  <a href="story.html" style="float:left;">My Story</a>
-		</div>
+		</div><!--ends top nav--> 
+
+		<div id="mobile-menu"><!--for mobile navigation --> 
+			<div id="mySidebar" class="sidebar">
+					  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+					  <a href="index.html">Home</a>
+					  <a href="blog.html">Blog</a>
+					  <a href="info.html">Info</a>
+					  <a href="curiosidades.html">Curiosidades</a>
+					  <a href="chc.html">Choques Culturales</a>
+					  <a href="story.html">My Story</a>
+			</div>
+
+			
+				  <button class="openbtn" onclick="openNav()" style="width: 200px !important; height: 100px;">☰ Menu </button>  
+				  
+			
+        	
+        </div><!--mobile menu ends --> 
 		
        <div class="row"><!--starts row-->
 		  <div class="columnl">
@@ -99,11 +118,17 @@
 		<div class="rightcolumn">
 		    <div class="card">
 		      <h2>Agregados recientemente</h2>
-		      <div class="fakeimg" style="height:100px;">Image</div>
-		      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-		    </div>
+		     
+		     <div class="card">
+		     <div class="popular-images"><img src="img/plane.jpg" width="50" height="70">
+             </div>
+             <div class="popular-textboxes">
+		      		<h4>¿Como venir al Reino Unido?</h4>
+		      </div>
+		   </div>
+
 		    <div class="card">
-		      <h3>Popular Post</h3>
+		   
 		      <div class="fakeimg"><p>Image</p></div>
 		      <div class="fakeimg"><p>Image</p></div>
 		      <div class="fakeimg"><p>Image</p></div>
@@ -117,7 +142,19 @@
        
 		<div class="footer">
 		  <h2></h2>
-		</div>
+		</div><!--ends footer --> 
+</div><!-- ends main --> 
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
 	</body>
 	</html>
 
